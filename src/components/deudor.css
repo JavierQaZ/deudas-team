@@ -1,0 +1,79 @@
+.deu-container {
+  background: linear-gradient(135deg, #040d35 0%, #9e3dff 100%);
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 10px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 400px;
+	position: relative;
+}
+
+.deu-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.deu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.deu-nombre {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.estado {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.deu-detalles {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.deu-detalles span {
+  background: #ffffff33;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.estado.pagado {
+  background: rgba(72, 187, 120, 0.9);
+}
+
+.estado.no-pagado {
+  background: rgba(245, 101, 101, 0.9);
+}
+
+.deu-cuotas-info {
+  background: rgba(66, 153, 225, 0.9) !important;
+}
+
+.deu-deuda {
+  background: rgba(237, 137, 54, 0.9) !important;
+	font-weight: 600;
+}
