@@ -2,16 +2,18 @@
   background: linear-gradient(135deg, #040d35 0%, #9e3dff 100%);
   border-radius: 12px;
   padding: 20px 30px;
-  box-shadow: 0 4px 6px #0000001a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 400px;
-	position: relative;
+  min-width: 500px;
+  max-width: 800px;
+  position: relative;
+  width: 100%;
 }
 
 .deu-container:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px #00000026;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .deu-info {
@@ -26,8 +28,9 @@
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.5px;
-	text-transform: uppercase;
-	font-style: italic;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-right: 120px;
 }
 
 .estado {
@@ -48,14 +51,14 @@
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .deu-detalles span {
-  background: #ffffff33;
+  background: rgba(255, 255, 255, 0.2);
   padding: 6px 14px;
   border-radius: 20px;
-  color: #f5f5f5;
+  color: white;
   font-size: 14px;
   font-weight: 500;
   backdrop-filter: blur(10px);
@@ -75,5 +78,84 @@
 
 .deu-deuda {
   background: rgba(237, 137, 54, 0.9) !important;
-	font-weight: 600;
+  font-weight: 600;
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .deu-container {
+    min-width: 350px;
+    padding: 18px 25px;
+  }
+
+  .deu-nombre {
+    font-size: 20px;
+    padding-right: 110px;
+  }
+
+  .estado {
+    font-size: 12px;
+    padding: 5px 12px;
+    right: 25px;
+  }
+
+  .deu-detalles span {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .deu-container {
+    min-width: unset;
+    width: calc(100% - 20px);
+    padding: 15px 20px;
+    margin: 8px 0;
+  }
+
+  .deu-nombre {
+    font-size: 18px;
+    padding-right: 100px;
+    letter-spacing: 0.3px;
+  }
+
+  .estado {
+    font-size: 11px;
+    padding: 4px 10px;
+    top: 15px;
+    right: 20px;
+  }
+
+  .deu-detalles {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .deu-detalles span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 360px) {
+  .deu-container {
+    padding: 12px 15px;
+  }
+
+  .deu-nombre {
+    font-size: 16px;
+    padding-right: 90px;
+  }
+
+  .estado {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .deu-detalles span {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
 }

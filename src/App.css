@@ -26,7 +26,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: rainbow-animation 0.2s linear infinite;
+  animation: rainbow-animation 3s linear infinite;
+  text-align: center;
 }
 
 @keyframes rainbow-animation {
@@ -35,5 +36,29 @@
   }
   100% {
     background-position: 200% 0%;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .app-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 }
