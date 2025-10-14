@@ -6,12 +6,14 @@ function App() {
   return (
     <div className='app-container'>
       <h1 className='app-title'>
-        FOKIN PAGUEN
+        Fokin Paguen
       </h1>
 
-      {data.map((item, index) => (
-        <Deudor key={index} {...item}/>
-      ))}
+      <div className='app-content'>
+        {data.map((item, index) => (
+          <Deudor key={index} {...item}/>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 {
-  "name": "nombre-proyecto",
-  "version": "0.1.0",
+  "name": "deudas-team",
+  "version": "0.2.1",
   "private": true,
   "homepage": "https://javierqaz.github.io/deudas-team",
   "dependencies": {

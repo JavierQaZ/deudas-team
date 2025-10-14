@@ -1,11 +1,20 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000000;
   padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .app-title {
@@ -28,6 +37,34 @@
   background-clip: text;
   animation: rainbow-animation 0.2s linear infinite;
   text-align: center;
+  flex-shrink: 0;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: calc(100vh - 120px);
+  padding-right: 10px;
+}
+
+.app-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.app-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.app-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes rainbow-animation {
@@ -49,6 +86,10 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
+
+  .app-content {
+    max-height: calc(100vh - 100px);
+  }
 }
 
 /* Móviles */
@@ -60,5 +101,10 @@
   .app-title {
     font-size: 24px;
     margin-bottom: 15px;
+  }
+
+  .app-content {
+    max-height: calc(100vh - 80px);
+    gap: 8px;
   }
 }
