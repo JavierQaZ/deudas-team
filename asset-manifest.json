@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/deudas-team/static/css/main.3ea53cce.css",
+    "main.css": "/deudas-team/static/css/main.df1b72a0.css",
     "main.js": "/deudas-team/static/js/main.77851713.js",
     "index.html": "/deudas-team/index.html",
-    "main.3ea53cce.css.map": "/deudas-team/static/css/main.3ea53cce.css.map",
+    "main.df1b72a0.css.map": "/deudas-team/static/css/main.df1b72a0.css.map",
     "main.77851713.js.map": "/deudas-team/static/js/main.77851713.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ea53cce.css",
+    "static/css/main.df1b72a0.css",
     "static/js/main.77851713.js"
   ]
 }
