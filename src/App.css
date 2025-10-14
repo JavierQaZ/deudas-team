@@ -21,7 +21,8 @@ body, html {
   font-size: 36px;
   margin-bottom: 30px;
   font-weight: 600;
-  background: linear-gradient(90deg, 
+  text-transform: uppercase;
+  background: linear-gradient(90deg,
     #ff0000,
     #ff7f00,
     #ffff00,
