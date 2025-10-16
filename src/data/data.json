@@ -11,9 +11,9 @@
     "nombre": "Claudio",
     "pagado": false,
     "cuotas": true,
-    "num_cuotas": "16",
-    "num_cuotas_pagadas": "1",
-    "deuda": 7500
+    "num_cuotas": "???",
+    "num_cuotas_pagadas": "2",
+    "deuda": 5000
   },
   {
     "nombre": "Vicente",
