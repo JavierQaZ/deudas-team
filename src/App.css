@@ -47,7 +47,8 @@ body, html {
   align-items: center;
   gap: 10px;
   max-height: calc(100vh - 120px);
-  padding-right: 10px;
+  padding: 10px;
+  width: 90%;
 }
 
 .app-content::-webkit-scrollbar {
@@ -66,6 +67,17 @@ body, html {
 
 .app-content::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.app-footer {
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @keyframes rainbow-animation {
@@ -107,5 +119,8 @@ body, html {
   .app-content {
     max-height: calc(100vh - 80px);
     gap: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 90%;
   }
 }

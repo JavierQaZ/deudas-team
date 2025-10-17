@@ -14,6 +14,9 @@ function App() {
           <Deudor key={index} {...item}/>
         ))}
       </div>
+      <footer className='app-footer'>
+        v0.3.1
+      </footer>
     </div>
   );
 }

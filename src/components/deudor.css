@@ -148,7 +148,8 @@
 @media (max-width: 480px) {
   .deu-container {
     min-width: unset;
-    width: calc(100% - 20px);
+    width: 100%;
+    max-width: 100%;
     padding: 15px 20px;
     margin: 8px 0;
   }
