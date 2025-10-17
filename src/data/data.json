@@ -1,12 +1,4 @@
 [
-	{
-    "nombre": "Benja",
-    "pagado": false,
-    "cuotas": false,
-    "num_cuotas": "",
-    "num_cuotas_pagadas": "",
-    "deuda": 8000
-  },
   {
     "nombre": "Claudio",
     "pagado": false,
@@ -22,5 +14,13 @@
     "num_cuotas": "0",
     "num_cuotas_pagadas": "0",
     "deuda": 8000
+  },
+  {
+    "nombre": "Benja",
+    "pagado": true,
+    "cuotas": false,
+    "num_cuotas": "",
+    "num_cuotas_pagadas": "",
+    "deuda": 0
   }
 ]
