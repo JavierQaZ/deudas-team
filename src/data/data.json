@@ -5,7 +5,8 @@
     "cuotas": true,
     "num_cuotas": "???",
     "num_cuotas_pagadas": "2",
-    "deuda": 5000
+    "deuda": 5000,
+    "plazo": null
   },
   {
     "nombre": "Vicente",
@@ -13,7 +14,8 @@
     "cuotas": false,
     "num_cuotas": "0",
     "num_cuotas_pagadas": "0",
-    "deuda": 8000
+    "deuda": 8000,
+    "plazo": "2025-11-24"
   },
   {
     "nombre": "Benja",
@@ -21,6 +23,7 @@
     "cuotas": false,
     "num_cuotas": "",
     "num_cuotas_pagadas": "",
-    "deuda": 0
+    "deuda": 0,
+    "plazo": null
   }
 ]
