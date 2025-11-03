@@ -1,14 +1,5 @@
 [
   {
-    "nombre": "Claudio",
-    "pagado": false,
-    "cuotas": true,
-    "num_cuotas": "???",
-    "num_cuotas_pagadas": "3",
-    "deuda": 4000,
-    "plazo": null
-  },
-  {
     "nombre": "Vicente",
     "pagado": false,
     "cuotas": false,
